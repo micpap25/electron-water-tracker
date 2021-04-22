@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "A simple desktop app with Electron to help people stay hydrated.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micpap25/electron-water-tracker.git"
+  },
+  "author": "micpap25",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micpap25/electron-water-tracker/issues"
+  },
+  "homepage": "https://github.com/micpap25/electron-water-tracker#readme",
+  "dependencies": {
+    "electron": "^12.0.5",
+    "eslint": "^7.24.0"
+  }
+}
