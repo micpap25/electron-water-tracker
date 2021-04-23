@@ -12,8 +12,9 @@ function createWindow () {
   // Make the Electron BrowserWindow
   const win = new BrowserWindow({
     // Set dimensions
-    width: 1280,
-    height: 720,
+    width: 800,
+    height: 400,
+    frame: false,
     // Set features in webPreferences
     webPreferences: {
       // Run this script before all others
@@ -25,7 +26,6 @@ function createWindow () {
 }
 
 // When the app is initialized (promise), make the window
-// Think of initialized like Discord in the toolbar
 app.whenReady().then(() => {
   createWindow()
 
