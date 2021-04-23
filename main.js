@@ -18,11 +18,11 @@ function createWindow () {
     // Set features in webPreferences
     webPreferences: {
       // Run this script before all others
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'src/preload.js')
     }
   })
   // Pull up the index file to display
-  win.loadFile('index.html')
+  win.loadFile('src/index.html')
 }
 
 // When the app is initialized (promise), make the window

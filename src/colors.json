@@ -1,0 +1,10 @@
+{
+    "light": {
+        "background": "#EEE",
+        "window-controls": "#171717"
+    },
+    "dark": {
+        "background": "#224",
+        "window-controls": "#FFF"
+    }
+}
