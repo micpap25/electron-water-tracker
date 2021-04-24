@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "water-tracker",
   "version": "1.0.0",
   "description": "A simple desktop app with Electron to help people stay hydrated.",
   "main": "main.js",
