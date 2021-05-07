@@ -8,7 +8,7 @@ const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
 // Function to create your window
-function createWindow () {
+function createWindow() {
   // Make the Electron BrowserWindow
   const win = new BrowserWindow({
     // Set dimensions

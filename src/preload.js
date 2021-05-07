@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Function to replace element with certain ID's text with something else.
-function replaceText (selector, text) {
+function replaceText(selector, text) {
   const element = document.getElementById(selector)
   if (element) element.innerText = text
 }
