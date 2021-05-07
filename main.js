@@ -6,6 +6,9 @@
 // BrowserWindow allows for browser display
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
+const Store = require('electron-store');
+
+Store.initRenderer();
 
 // Function to create your window
 function createWindow() {
