@@ -1,6 +1,8 @@
-<!-- Content to be hosted on Electron to user -->
-<!-- Work on this next: https://stackoverflow.com/questions/35876939/frameless-window-with-controls-in-electron-windows -->
-<!-- Use this general idea for filling the bottle: https://css-tricks.com/change-color-of-svg-on-hover/ -->
+<!-- TODO: Import a styling tool like Bootstrap, and style non-color segments -->
+<!-- TODO: Load components in main.js (look there) -->
+<!-- TODO: Make columns and rows properly -->
+<!-- TODO: Get images, like water bottle and arrows, from either Internet or FontAwesome, also get fonts if cannot be loaded -->
+<!-- TODO: Make quotes -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,9 +16,99 @@
   </head>
 
   <body>
-    <p>Hello</p>
-    <span id="targetFluidOunces"></span>
-    <span id="currentFluidOunces"></span>
-    <span id="theme"></span>
+    <!-- Left side: Water bottle with "add amount" button below it -->
+    <!-- Top right: Goal setter -->
+    <!-- Bottom right: Daily water fact -->
+    <header id="titlebar">
+      <div id="drag-region">
+        <div id="window-title">
+          <span>Electron quick start</span>
+        </div>
+        <div id="window-controls">
+          <div class="button" id="min-button">
+            <img
+              class="icon"
+              srcset="
+                assets/icons/min-w-10.png 1x,
+                assets/icons/min-w-12.png 1.25x,
+                assets/icons/min-w-15.png 1.5x,
+                assets/icons/min-w-15.png 1.75x,
+                assets/icons/min-w-20.png 2x,
+                assets/icons/min-w-20.png 2.25x,
+                assets/icons/min-w-24.png 2.5x,
+                assets/icons/min-w-30.png 3x,
+                assets/icons/min-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+          <div class="button" id="max-button">
+            <img
+              class="icon"
+              srcset="
+                assets/icons/max-w-10.png 1x,
+                assets/icons/max-w-12.png 1.25x,
+                assets/icons/max-w-15.png 1.5x,
+                assets/icons/max-w-15.png 1.75x,
+                assets/icons/max-w-20.png 2x,
+                assets/icons/max-w-20.png 2.25x,
+                assets/icons/max-w-24.png 2.5x,
+                assets/icons/max-w-30.png 3x,
+                assets/icons/max-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+          <div class="button" id="restore-button">
+            <img
+              class="icon"
+              srcset="
+                assets/icons/restore-w-10.png 1x,
+                assets/icons/restore-w-12.png 1.25x,
+                assets/icons/restore-w-15.png 1.5x,
+                assets/icons/restore-w-15.png 1.75x,
+                assets/icons/restore-w-20.png 2x,
+                assets/icons/restore-w-20.png 2.25x,
+                assets/icons/restore-w-24.png 2.5x,
+                assets/icons/restore-w-30.png 3x,
+                assets/icons/restore-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+          <div class="button" id="close-button">
+            <img
+              class="icon"
+              srcset="
+                assets/icons/close-w-10.png 1x,
+                assets/icons/close-w-12.png 1.25x,
+                assets/icons/close-w-15.png 1.5x,
+                assets/icons/close-w-15.png 1.75x,
+                assets/icons/close-w-20.png 2x,
+                assets/icons/close-w-20.png 2.25x,
+                assets/icons/close-w-24.png 2.5x,
+                assets/icons/close-w-30.png 3x,
+                assets/icons/close-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main">
+      <div id="left-side">
+        <h1>Hello</h1>
+      </div>
+      <div id="right-side">
+        <div id="top-right">
+          <p id="targetFluidOunces"></p>
+          <p id="currentFluidOunces"></p>
+        </div>
+        <div id="bottom-right">
+          <p id="theme"></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

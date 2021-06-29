@@ -10,6 +10,9 @@ const Store = require('electron-store');
 
 Store.initRenderer();
 
+//TODO: Load fonts here (Quicksand Bold? Montserrat? Something more angular?)
+//TODO: Load colors.json here and figure out how to use it
+
 // Function to create your window
 function createWindow() {
   // Make the Electron BrowserWindow
@@ -18,10 +21,13 @@ function createWindow() {
     width: 800,
     height: 400,
     frame: false,
+    backgroundColor: '#FFF',
     // Set features in webPreferences
     webPreferences: {
       // Run this script before all others
       preload: path.join(__dirname, "src/preload.js"),
+      nodeIntegration: true,
+      enableRemoteModule: true
     },
   });
   // Pull up the index file to display
